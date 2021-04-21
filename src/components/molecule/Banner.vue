@@ -1,5 +1,5 @@
 <template>
-  <div>my face will go here</div>
+  <div class="bg-warning">my face will go here</div>
 </template>
 
 <script>
