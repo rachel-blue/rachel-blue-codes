@@ -1,8 +1,18 @@
 <template>
-  <div>
-    <Banner />
-    <AboutSection />
-    <PortfolioSection />
+  <div class="bg-primary p-4 m-4">
+    <div class="row">
+      <div class="col-lg-2 col-sm-12">
+        <Banner />
+      </div>
+
+      <div class="col-md-12 col-lg-5">
+        <AboutSection />
+      </div>
+
+      <div class="col-md-12 col-lg-5">
+        <PortfolioSection />
+      </div>
+    </div>
   </div>
 </template>
 
