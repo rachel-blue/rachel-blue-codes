@@ -1,15 +1,24 @@
 <template>
   <div class="bg-dark">
-    <div>First Project</div>
-    <div>Second Project</div>
-    <div>Third Project</div>
+    <ul>
+      <li v-for="item in portfolioItems" :key="item.id">
+        {{ item.title }}
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
+import { portfolioItems } from './portfolio-items'
+
 export default {
+  data: () => {
+    return {
+      portfolioItems
+    }
+  },
   name: 'PortfolioSection',
-  props: {}
+  props: {},
 }
 </script>
 
